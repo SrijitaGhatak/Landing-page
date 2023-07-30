@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/proj%201/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./Landing page_files/style.css">
+</head>
+<body>
+    <section class="first">
+        <div class="text_container">
+            <h2><span class="lg_text"></span> </h2>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue"></div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+
+            <h1 class="lg_text">WELCOME TO MY PAGE</h1>
+        </div>
+    </section>
+    <section class="black_box">
+        <h2>WORLD OF <span>LEARNING</span></h2>
+    </section>
+    <section class="work">
+        <div class="grid_item">
+            <div class="card">
+                <div class="img_container">
+                    <img src="./Landing page_files/web.png" alt="About Me">
+                </div>
+                <div class="card_content">
+                    <h3>About Me</h3>
+                    <p>I'm a 3rd year student studying Information Technology. I love reading technical blogs. My goal is to become a Software Developer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid_item">
+            <div class="card">
+                <div class="img_container">
+                    <img src="./Landing page_files/mobile.png" alt="Learning Blog:">
+                </div>
+                <div class="card_content">
+                    <h3>Learning Blog:</h3>
+                    <p>Explore my learning blog, where I share insights, study tips, and reflections on various subjects and topics. Let's embark on a quest for knowledge together!</p>
+                </div>
+            </div>
+        </div>
+       <div class="grid_item">
+        <div class="card">
+            <div class="img_container">
+                <img src="./Landing page_files/uiux.png" alt="Learning Resources:">
+            </div>
+            <div class="card_content">
+                <h3>Learning Resources:</h3>
+                <p>Discover a curated list of my favorite learning resources, including books, articles, websites, and educational tools. I believe in the power of continuous learning</p>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="bottom">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Have any questions, suggestions, or collaboration opportunities?Feel free to reach out to me via email at srijitaghatak6@gmail.com or connect with me on social media.</p>
+        </div>
+        <div class="social_media">
+            <h2>Social Media Handles</h2>
+            <p>Connect with me on social media platforms to stay in touch and be a part of my academic community</p>
+        </div>
+    </section>
+    <div class="comment-form">
+        <h2>Leave a Message</h2>
+        <form action="http://127.0.0.1:5500/proj%201/#" method="post">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required=""></textarea>
+
+            <input type="submit" value="Submit Comment">
+        </form>
+    </div>
+    <footer>Made By SRIJITA</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
